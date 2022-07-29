@@ -1,20 +1,26 @@
 import React from "react";
-import { Products, FooterBanner, HeroBanner } from "../components";
+import { Product, FooterBanner, HeroBanner } from "../components";
 import { client } from "../lib/client";
 
+
+
 const Home = ({ products, bannerData }) => {
-  console.log(products, bannerData)
+
   return (
-    <div>
+    <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-      {console.log(bannerData)}
-    <Products />
+
+      <div className="container">
+        <Product products={products} />
+      </div>
       <h1>About us</h1>
+
       <h1>Instagram</h1>
       <FooterBanner />
+
       <h1>footer</h1>
-    </div>
-  )
+    </>
+  );
 }
 //fetch product from sanity to project
 export const getServerSideProps = async () => {
