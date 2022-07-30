@@ -9,6 +9,8 @@ body {
   --small-padding: 2rem;
   --standard-padding: 5rem;
   --section-margin: 15rem;
+  --primary-text-black: #363636;
+  --secondary-text-gray: rgb(78, 78, 78);
 }
 
 .container {
@@ -73,37 +75,72 @@ p {
   color: white;
 }
 
+.text-black {
+  color:var(--primary-text-black);
+}
+
+.text-gray {
+  color: var(--secondary-text-gray);
+}
+
 .standard-padding {
   padding: 0 var(--standard-padding);
 }
 
 .standard-margin-top {
-  margin-top: 5rem;
+  margin-top: var(--standard-padding);
+}
+
+.small-margin {
+  margin-top: var(--small-padding);
+}
+
+.secondary-font {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .button {
   padding: 2rem 5rem;
   border: none;
   transition: all 0.2s ease;
-background-color: white;
+  background-color: white;
 }
 
 .border-button {
-    padding: 2rem 5rem;
-     transition: all 0.2s ease;
-     border: 1px solid rgba(77, 77, 77, 0.516);
-     background-color: white;
+  padding: 2rem 5rem;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(77, 77, 77, 0.516);
+  background-color: white;
 }
 
 .small-button {
   padding: 0.5rem 6rem;
   background-color: white;
-    border: 1px solid rgba(77, 77, 77, 0.516);
-    transition: all 0.2s ease;
+  border: 1px solid rgba(77, 77, 77, 0.516);
+  transition: all 0.2s ease;
 }
 
-.small-button:hover,.border-button:hover, .button:hover {
+.button-dark {
+  padding: 2rem 5rem;
+  background-color: var(--primary-text-black);
+  color: white;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.small-button:hover,
+.border-button:hover,
+.button:hover {
   background-color: white;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.button-dark:hover {
   transform: translateY(-3px);
   cursor: pointer;
 }
@@ -118,6 +155,11 @@ background-color: white;
   margin-top: var(--section-margin);
 }
 
+.font-weight-normal {
+  font-weight: 400;
+}
+
+/* Nav */
 nav {
   padding: var(--small-padding) 0;
 }
@@ -129,6 +171,28 @@ nav {
 
 .nav__break {
   color: rgba(233, 233, 233, 0.449);
+}
+
+.shopping-cart {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.shopping-cart:hover {
+   background-color: transparent;
+  
+}
+
+.shopping-cart__qty {
+ padding: 0.5rem 1rem;
+ background-color: var(--secondary-text-gray);
+ border-radius: 50%;
+ font-size:1.5rem;
+ position: absolute;
+ top: -50%;
+ left: 60%;
 }
 
 a {
@@ -168,14 +232,13 @@ a {
   font-weight: 300;
   font-family: "Cormorant Garamond", serif;
   text-align: center;
-   margin-bottom: var(--small-padding);
+  margin-bottom: var(--small-padding);
 }
 
-
 .product img {
-  padding-right:2rem;
+  padding-right: 2rem;
   pointer-events: none;
- margin-bottom: var(--small-padding);
+  margin-bottom: var(--small-padding);
 }
 
 .product__button {
@@ -187,15 +250,87 @@ a {
   font-weight: 400;
 }
 
-.inner-carousel{
+.inner-carousel {
   display: flex;
 }
 .carousel {
   cursor: grab;
   overflow: hidden;
- 
 }
 
+/* Product page */
+.product__image {
+  width: 100%;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 2rem;
+}
+
+.product__small {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 2rem 0.25rem;
+  border-radius: 20px !important;
+}
+
+.product__title {
+  font-family: "Cormorant";
+  font-weight: 300;
+}
+
+.product__small:hover {
+  transform: scale(1.05);
+}
+
+.product__size {
+  padding: 0 2rem;
+  font-weight: 600;
+}
+
+.product__size:hover {
+  cursor: pointer;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.product__reviews {
+  margin-top: 1rem;
+}
+
+.product__reviews p {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.product__qty {
+  justify-content: space-around;
+ margin-top: var(--small-padding);
+}
+
+.product__qty p {
+  border: 1px solid rgba(77, 77, 77, 0.516);
+  flex-grow: 1;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--secondary-text-gray);
+}
+
+.product__qty p:not(:nth-of-type(2)) {
+  cursor: pointer;
+}
+
+.products-container {
+  display: grid;
+
+}
 
 @media only screen and (max-width: 65rem) {
   .nav {
@@ -210,4 +345,11 @@ a {
   .nav__menu {
     display: none;
   }
+
+  
+.products-container {
+
+  grid-template-columns: 1fr 1fr;
+  gap:0 5rem;
+}
 }

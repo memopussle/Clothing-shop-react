@@ -1,7 +1,7 @@
 import React from "react";
 import { Product, FooterBanner, HeroBanner } from "../components";
 import { client } from "../lib/client";
-
+import Link from "next/link";
 
 
 const Home = ({ products, bannerData }) => {
@@ -11,14 +11,18 @@ const Home = ({ products, bannerData }) => {
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
 
       <div className="container">
+        <h5 className="product__heading section-margin">Collections</h5>
         <Product products={products} />
+        <div className="product__button">
+          <Link href={`/products`}>
+            <button className="border-button">SEE MORE</button>
+          </Link>
+        </div>
       </div>
       <h1>About us</h1>
 
       <h1>Instagram</h1>
-      <FooterBanner />
 
-      <h1>footer</h1>
     </>
   );
 }

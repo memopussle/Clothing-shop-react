@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { urlFor } from "../lib/client";
 import { motion } from "framer-motion";
 
+
 import Link from "next/link";
 
 const Product = ({ products }) => {
@@ -18,7 +19,7 @@ const Product = ({ products }) => {
 
   return (
     <div>
-      <h5 className="product__heading section-margin">Collections</h5>
+    
       <motion.div
         ref={carousel}
         className="carousel"
@@ -32,7 +33,7 @@ const Product = ({ products }) => {
           {products?.map((product) => (
             <motion.div key={product._id} className="product">
               <>
-                {console.log(product?.slug.current)}
+            
                 <img
                   src={urlFor(product?.image && product?.image[0])}
                   width={450}
@@ -51,11 +52,7 @@ const Product = ({ products }) => {
           ))}
         </motion.div>
       </motion.div>
-      <div className="product__button">
-        <Link href={`/products`}>
-          <button className="border-button">SEE MORE</button>
-        </Link>
-      </div>
+     
     </div>
   );
 };
