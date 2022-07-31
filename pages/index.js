@@ -1,5 +1,5 @@
 import React from "react";
-import { Product, FooterBanner, HeroBanner } from "../components";
+import { Product, Footer, HeroBanner, Intro } from "../components";
 import { client } from "../lib/client";
 import Link from "next/link";
 
@@ -19,9 +19,8 @@ const Home = ({ products, bannerData }) => {
           </Link>
         </div>
       </div>
-      <h1>About us</h1>
+      <Intro />
 
-      <h1>Instagram</h1>
 
     </>
   );

@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import { urlFor } from "../lib/client";
 import { motion } from "framer-motion";
 
-
 import Link from "next/link";
 
 const Product = ({ products }) => {
@@ -19,7 +18,6 @@ const Product = ({ products }) => {
 
   return (
     <div>
-    
       <motion.div
         ref={carousel}
         className="carousel"
@@ -33,26 +31,23 @@ const Product = ({ products }) => {
           {products?.map((product) => (
             <motion.div key={product._id} className="product">
               <>
-            
                 <img
                   src={urlFor(product?.image && product?.image[0])}
-                  width={450}
-                  height={550}
                   alt="products"
+                  className="images"
                 ></img>
                 <p>{product?.name}</p>
 
                 <p>${product?.price}</p>
 
                 <Link href={`/product/${product?.slug.current}`}>
-                  <button className="small-button">⟶</button>
+                  <button className="small-button small-margin">⟶</button>
                 </Link>
               </>
             </motion.div>
           ))}
         </motion.div>
       </motion.div>
-     
     </div>
   );
 };

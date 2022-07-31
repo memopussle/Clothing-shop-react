@@ -1,11 +1,10 @@
 import React from "react";
-import { urlFor } from "../lib/client";
 import Navbar from "./Navbar";
 
-const HeroBanner = ({ heroBanner }) => {
+const HeroBanner = () => {
  
   return (
-    <div className="hero__img">
+    <div className="hero__img ">
       <Navbar />
       <header className="header-wrapper">
        

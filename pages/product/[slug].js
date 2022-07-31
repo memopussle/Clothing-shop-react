@@ -1,5 +1,6 @@
 //pages -> product -> [slug] : each product page
 import React, { useState } from "react";
+
 import {
   AiOutlineMinus,
   AiOutlinePlus,
@@ -8,20 +9,21 @@ import {
 } from "react-icons/ai";
 import { client, urlFor } from "../../lib/client";
 import { Product } from "../../components";
+import { useStateContext } from "../../context/StateContext";
 
 const productDetails = ({ products, product }) => {
   //choose index
   const [index, setIndex] = useState(0);
+  const { qty, incQty, decQty, onAdd, setSize } = useStateContext();
 
-  console.log(products, product);
+
   const { image, name, details, price } = product;
-
-  console.log(image);
+console.log(product)
+ 
   return (
     <>
-    
       <div className="container">
-        <div className="products-container">
+        <div className="products-container standard-margin-top">
           <div className="product__images">
             <img
               src={urlFor(image && image[index])}
@@ -43,10 +45,16 @@ const productDetails = ({ products, product }) => {
             <h6 className="product__title">{name}</h6>
             <p className="font-weight-normal"> ${price}</p>
             <p>
-              <span className="text-gray">Size:</span>{" "}
-              <span className="product__size">S</span>
-              <span className="product__size">M</span>
-              <span className="product__size">L</span>
+              <span className="text-gray">Size:</span>
+              <span className="product__size" onClick={() => setSize("S")}>
+                S
+              </span>
+              <span className="product__size" onClick={() => setSize("M")}>
+                M
+              </span>
+              <span className="product__size" onClick={() => setSize("L")}>
+                L
+              </span>
             </p>
             <div className="product__reviews">
               <AiFillStar size={25} color="#363636" />
@@ -58,21 +66,26 @@ const productDetails = ({ products, product }) => {
             </div>
             <p className="small-margin text-gray">{details}</p>
             <div className="flex product__qty">
-              <p className="minus">
+              <p className="minus" onClick={decQty}>
                 <AiOutlineMinus size={25} color="#363636" />
               </p>
-              <p className="num">0</p>
-              <p className="plus">
+              <p className="num">{qty}</p>
+              <p className="plus" onClick={incQty}>
                 <AiOutlinePlus size={25} color="#363636" />
               </p>
             </div>
-            <button className="button-dark small-margin">ADD TO BAG</button>
+            <button
+              className="button-dark small-margin"
+              onClick={() => onAdd(product, qty)}
+            >
+              ADD TO BAG
+            </button>
             <button className="border-button small-margin">BUY NOW</button>
           </div>
         </div>
 
-        <div className="recommended">
-          <h6 className="secondary-font">You may also like</h6>
+        <div className="recommended standard-margin-top">
+          <h6 className="secondary-font small-margin">You may also like</h6>
           <Product products={products} />
         </div>
       </div>

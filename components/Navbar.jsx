@@ -3,9 +3,13 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useStateContext } from "../context/StateContext";
+import Cart from "./Cart";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -25,15 +29,23 @@ const Navbar = () => {
           }
         >
           <div className="nav__menu">
-            <AiOutlineMenu
-              onClick={handleClick}
-              size="28"
-              color={navWhite ? "#ffffff" : "#363636"}
-            />
+            <button onClick={handleClick}>
+              {isOpen === false ? (
+                <AiOutlineMenu
+                  size="28"
+                  color={navWhite ? "#ffffff" : "#363636"}
+                />
+              ) : (
+                <AiOutlineClose
+                  size="28"
+                  color={navWhite ? "#ffffff" : "#363636"}
+                />
+              )}
+            </button>
           </div>
 
           <div className="nav flex">
-            <Link href="/">
+            <Link  href="/">
               <p>HOME</p>
             </Link>
             <Link href="/collections">
@@ -47,19 +59,25 @@ const Navbar = () => {
               <p className="nav standard-padding">ABOUT</p>
             </Link>
             <div>
-              <button className="shopping-cart">
+              <button
+                className="shopping-cart"
+                onClick={() => setShowCart(!showCart)}
+              >
                 <BsBag color={navWhite ? "#ffffff" : "#363636"} size="25" />
-                <span className="text-white shopping-cart__qty">0</span>
+                <span className="text-white shopping-cart__qty">
+                  {totalQuantities}
+                </span>
               </button>
+              {showCart && <Cart />}
             </div>
           </div>
         </nav>
       </div>
 
       <hr className="nav__break" />
-      {/* navbar menu */}
+
       {isOpen && (
-        <ul>
+        <ul className="menu">
           <li>
             <Link href="/">
               <p>HOME</p>
