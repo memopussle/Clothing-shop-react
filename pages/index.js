@@ -2,6 +2,8 @@ import React from "react";
 import { Product, Footer, HeroBanner, Intro } from "../components";
 import { client } from "../lib/client";
 import Link from "next/link";
+import About from "../components/About";
+import Instagram from "../components/Instagram";
 
 const Home = ({ products}) => {
   return (
@@ -12,12 +14,14 @@ const Home = ({ products}) => {
         <h5 className="product__heading section-margin">Collections</h5>
         <Product products={products} />
         <div className="product__button">
-          <Link href={`/products`}>
+          <Link href="/collections">
             <button className="border-button">SEE MORE</button>
           </Link>
         </div>
       </div>
       <Intro />
+      <About />
+      <Instagram />
     </>
   );
 };

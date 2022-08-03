@@ -16,7 +16,6 @@ const Cart = () => {
     cartItems,
     setShowCart,
     size,
-    qty,
     totalPrice,
     toggleCartItemQuantity,
     onRemove
@@ -73,7 +72,7 @@ const Cart = () => {
         {cartItems.length >= 1 &&
           cartItems.map((item) => (
             <div key={item._id} className=" cart-product  standard-margin-top">
-              <img src={urlFor(item?.image[0])} className="product__image" />
+              <img src={urlFor(item?.image[0])} className="cart__image" />
               <div>
                 <div className="flex space-between">
                   <h6 className="secondary-font font-light line-height-normal">

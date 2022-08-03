@@ -7,6 +7,7 @@ import { useStateContext } from "../context/StateContext";
 import Cart from "./Cart";
 import { AiOutlineClose } from "react-icons/ai";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { showCart, setShowCart, totalQuantities } = useStateContext();
@@ -45,7 +46,7 @@ const Navbar = () => {
           </div>
 
           <div className="nav flex">
-            <Link  href="/">
+            <Link href="/">
               <p>HOME</p>
             </Link>
             <Link href="/collections">
@@ -77,23 +78,26 @@ const Navbar = () => {
       <hr className="nav__break" />
 
       {isOpen && (
-        <ul className="menu">
-          <li>
-            <Link href="/">
-              <p>HOME</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/collections">
-              <p>COLLECTIONS</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <p>ABOUT</p>
-            </Link>
-          </li>
-        </ul>
+
+    
+          <ul className="menu">
+            <li>
+              <Link href="/">
+                <p>HOME</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/collections">
+                <p>COLLECTIONS</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <p>ABOUT</p>
+              </Link>
+            </li>
+          </ul>
+       
       )}
     </>
   );

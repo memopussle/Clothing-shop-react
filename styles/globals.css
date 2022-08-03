@@ -3,6 +3,7 @@
 html,
 body {
   font-size: 62.5%;
+
 }
 
 :root {
@@ -116,6 +117,8 @@ button {
   font-weight: 100;
 }
 
+
+
 .button {
   padding: 2rem 5rem;
   border: none;
@@ -200,6 +203,7 @@ nav p:hover {
   height: 100vh;
   padding-top: var(--standard-padding);
   z-index: 1000;
+
 }
 
 .menu p:hover {
@@ -236,7 +240,7 @@ button {
   height: 100%;
   padding-top: var(--small-padding);
   z-index: 1000;
-  padding: 0 clamp(2.4rem, 10vw, 24rem);
+  padding: 0 clamp(2.4rem, 3vw, 6.2rem);
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 5rem;
@@ -316,6 +320,10 @@ a {
 /* Product page */
 .product__image {
   width: 100%;
+}
+
+.cart__image {
+  width: 60%;
 }
 
 .product-container {
@@ -440,6 +448,11 @@ a {
   font-weight: 400;
   background-color: white;
   margin-top: var(--standard-padding);
+
+}
+
+select:first-child {
+  margin-right: var(--small-padding);
 }
 
 .collections {
@@ -448,7 +461,8 @@ a {
   cursor: pointer;
   transition: all 0.2s ease;
   margin-right: var(--small-padding);
-  margin-bottom:  var(--small-padding);
+  margin-bottom:  var(--standard-padding);
+
 }
 
 .collections:hover {
@@ -459,7 +473,7 @@ a {
 .collections__product {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+justify-content: center;
 
 }
 .canceled {
@@ -468,6 +482,70 @@ a {
   align-items: center;
 }
 
+/* ABout */
+.about__image {
+  width: 100%;
+}
+
+.about__text {
+  flex-direction: column;
+  margin-bottom: var(--standard-padding);
+}
+
+.insta__image {
+    margin: 1rem ;
+   
+    
+}
+
+
+.instagram__images {
+  text-align: center;
+
+}
+
+.insta__image {
+ margin-top: 1rem;
+ width: 12rem;
+}
+
+
+/* footer */
+.footer a {
+  color: var(--primary-text-black);
+
+}
+
+.footer a p:last-child {
+  font-size:1.5rem;
+}
+
+.footer {
+  flex-wrap: wrap;
+  margin-bottom: var(--standard-padding);
+
+}
+
+.footer > li {
+  list-style-type: none;
+}
+
+
+@media only screen and (max-width: 35rem) {
+  
+  .instagram__text {
+  flex-direction: column;
+ align-items: center;
+}
+
+.footer > li:last-child {
+  margin-top: var(--small-padding);
+}
+
+
+}
+
+
 @media only screen and (max-width: 65rem) {
   .nav {
     display: none;
@@ -475,13 +553,28 @@ a {
   .header-wrapper {
     width: 100vw;
   }
+
 }
+
 
 @media only screen and (min-width: 35rem) {
   .collections__product {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /*  Instagram */
+.instagram__text > * {
+  display: inline-block;
+}
+
+.instagram__text {
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 }
 
 @media only screen and (min-width: 65rem) {
@@ -523,6 +616,22 @@ a {
   }
 
   .intro__text {
-    margin-left: 20rem;
+    margin-left: 10rem;
+    text-align: right;
   }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about__text {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+  }
+
+  .insta__image{
+    width: 15rem;
+  }
+
 }
