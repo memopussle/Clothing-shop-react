@@ -127,6 +127,8 @@ button {
 }
 
 
+
+
 .button {
   padding: 2rem 5rem;
   border: none;
@@ -292,6 +294,10 @@ a {
   display: inline-block;
   text-align: center;
   line-height: 1.2;
+}
+
+.intro__image {
+  width: 100%;
 }
 
 /*Products*/

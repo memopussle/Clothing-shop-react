@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const about = () => {
   return (
@@ -24,31 +23,19 @@ const about = () => {
           </p>
         </div>
         <div className="flex story__wrapper standard-margin-top">
-          <Image
-            src="/img/story.jpg"
-            className="intro__image"
-            width={460}
-            height={700}
-            alt="story"
-          />
+          <img src="./img/story.jpg" className="story__image" />
         </div>
       </div>
       <div className="mission standard-margin-top ">
         <div className="flex story__wrapper">
-          <Image
-            src="/img/story2.jpg"
-            className="intro__image"
-            width={600}
-            height={420}
-            alt="mission"
-          />
+          <img src="./img/story2.jpg" className="intro__image" />
         </div>
         <div className="mission__text">
-          <h5 className="secondary-font font-normal standard-margin-top">
+          <h5 className="secondary-font font-normal standard-margin-top ">
             Our mission
           </h5>
-          <p className=" standard-margin-top font-normal">
-            All OverTheSea's lines are incorporating garments made with
+          <p className="secondary-font standard-margin-top font-normal">
+            All OverTheSea lines are incorporating garments made with
             sustainable materials under its global action. Its goal is to reduce
             the use of natural resources, minimising the environmental impact of
             each phase of obtaining them, and also to protect biodiversity.

@@ -11,7 +11,7 @@ import { client, urlFor } from "../../lib/client";
 import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
 
-const productDetails = ({ products, product }) => {
+const ProductDetails = ({ products, product }) => {
   //choose index
   const [index, setIndex] = useState(0);
   const { qty, incQty, decQty, onAdd, setSize, setShowCart } = useStateContext();
@@ -133,4 +133,4 @@ export const getStaticProps = async ({ params: { slug } }) => {
   };
 };
 
-export default productDetails;
+export default ProductDetails;
