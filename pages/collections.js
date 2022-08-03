@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { client, urlFor } from "../lib/client";
 import Link from "next/link";
 
-const collections = ({ products }) => {
+const Collections = ({ products }) => {
   const [category, setCategory] = useState("all");
   const newProducts = products;
   const [allProducts, setAllProducts] = useState(newProducts);
@@ -105,4 +105,4 @@ export const getServerSideProps = async () => {
   };
 };
 
-export default collections;
+export default Collections;

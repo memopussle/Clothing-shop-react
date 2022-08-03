@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const about = () => {
   return (
@@ -23,12 +24,24 @@ const about = () => {
           </p>
         </div>
         <div className="flex story__wrapper standard-margin-top">
-          <img src="./img/story.jpg" className="story__image" />
+          <Image
+            src="/img/story.jpg"
+            className="intro__image"
+            width={460}
+            height={700}
+            alt="story"
+          />
         </div>
       </div>
       <div className="mission standard-margin-top ">
         <div className="flex story__wrapper">
-          <img src="./img/story2.jpg" className="intro__image" />
+          <Image
+            src="/img/story2.jpg"
+            className="intro__image"
+            width={600}
+            height={420}
+            alt="mission"
+          />
         </div>
         <div className="mission__text">
           <h5 className="secondary-font font-normal standard-margin-top">
