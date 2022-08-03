@@ -26,11 +26,15 @@ const Success = () => {
         <h6 className="secondary-font">Thank you for your order!</h6>
         <p>Check your email inbox for the receipt.</p>
         <p>
-          If you have any questions, please email{" "}
-          <a href="mailto:order@example.com" className="email">order@example.com</a>
+          If you have any questions, please email
+          <a href="mailto:order@example.com" className="email">
+            order@example.com
+          </a>
         </p>
         <Link href="/">
-          <button className="button-dark small-margin">CONTINUE SHOPPING</button>
+          <button className="button-dark small-margin">
+            CONTINUE SHOPPING
+          </button>
         </Link>
       </div>
     </div>

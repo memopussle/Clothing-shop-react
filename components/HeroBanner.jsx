@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 
@@ -27,9 +27,14 @@ const item = {
             COLLECTION
           </motion.h1>
 
-          <motion.button className="button standard-margin-top" variants={item}>
-            SHOP NOW
-          </motion.button>
+          <Link href="/collections">
+            <motion.button
+              className="button standard-margin-top"
+              variants={item}
+            >
+              SHOP NOW
+            </motion.button>
+          </Link>
         </header>
       </motion.div>
     </div>
