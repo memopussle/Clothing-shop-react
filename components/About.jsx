@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 
 const About = () => {
@@ -14,7 +15,9 @@ const About = () => {
             for its maker.
           </p>
           <div className="small-margin">
-            <button className="border-button">KNOW MORE</button>
+            <Link href="/about">
+              <button className="border-button">KNOW MORE</button>
+            </Link>
           </div>
         </div>
         <img src="./img/about.jpg" alt="about" className="about__image" />
