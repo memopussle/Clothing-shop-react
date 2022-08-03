@@ -1,7 +1,7 @@
 
 https://user-images.githubusercontent.com/91854884/182618457-93692f9f-eeed-4316-a265-fb627c285d84.mp4
 
-[View Live Website Here ](https://overthesea-shop.vercel.app/)
+[View Live Website Here ](https://overthesea-shop-1nynqr2jd-memopussle.vercel.app/)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
