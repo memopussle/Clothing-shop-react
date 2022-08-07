@@ -1,14 +1,16 @@
 import React from "react";
-import { Product, Footer, HeroBanner, Intro } from "../components";
+import { Product, HeroBanner, Intro } from "../components";
 import { client } from "../lib/client";
 import Link from "next/link";
 import About from "../components/About";
 import Instagram from "../components/Instagram";
 
+
 const Home = ({ products}) => {
   return (
     <>
-      <HeroBanner  />
+
+      <HeroBanner />
 
       <div className="container">
         <h5 className="product__heading section-margin">Collections</h5>

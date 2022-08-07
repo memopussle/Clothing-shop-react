@@ -15,13 +15,11 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <title>OverTheSea</title>
+        <link rel="icon" href="/favicon-32x32.png"/>
       </Head>
       <header>{showHeader && <Navbar />}</header>
       <main>{children}</main>
-      <footer>
-        {noFooter && <Footer />}
-      
-      </footer>
+      <footer>{noFooter && <Footer />}</footer>
     </div>
   );
 }
