@@ -4,6 +4,15 @@ https://user-images.githubusercontent.com/91854884/182618457-93692f9f-eeed-4316-
 [View Live Website Here ](https://overthesea-shop-qgqll239p-memopussle.vercel.app/)
 
 
+
+ <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        (https://skills.thijs.gg/icons?i=js,html,css,js,react,git,figma)](https://skills.thijs.gg)
+      </ul>
+    </li>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
