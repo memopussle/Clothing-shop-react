@@ -9,7 +9,7 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#challenges">Features</a></li>
+        <li><a href="#challenges">Challenges</a></li>
       </ul>
     </li>
     <li>
