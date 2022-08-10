@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/91854884/182618457-93692f9f-eeed-4316-
 
 [View Live Website Here ](https://overthesea-shop-qgqll239p-memopussle.vercel.app/)
 
-This project is an E-commerce Clothing Shop specialising in selling sustainable women's clothes. It is a fully functioning application that displays products and allows users to purchase online.
+OverTheSea is an E-commerce clothing store specialising in selling sustainable women's clothes. It is a fully functioning application that displays products and allows users to purchase online.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,7 +40,7 @@ This project is an E-commerce Clothing Shop specialising in selling sustainable 
 
 ### Built With
 
-Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe, Context API and Framer Motion. Context API simplifies the props process by store them globally. I choose Nextj because this framework can handle both front-end and back-end configurations needed for React. Also, I used the Sanity platform for data storage and content management. Nextjs and Sanity work perfectly together for the back and front end without needing node js, express and MongoDB.
+Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe, Context API and Framer Motion. Context API simplifies the props by storing them globally. I chose Nextjs because this framework can handle both front-end and back-end configurations, which are needed for React. Also, I used the Sanity.io platform for data storage and content management. Nextjs and Sanity work perfectly together without needing nodejs, express and MongoDB.
 
 
 [![Technologies used](https://skills.thijs.gg/icons?i=react,nextjs,js&theme=light)](https://skills.thijs.gg)
@@ -57,7 +57,7 @@ Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaS
 
 ### Challenges
 
-There are a few challenges that I faced along the project. Mainly are communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features ( only work on Firefox but not across all internet platforms), and push Stripe purchase function live.
+There were a few challenges that I faced while working on this project. Mainly they were communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features (initially this only works on Firefox but not yet across all internet browsers), and push Stripe purchase payment live.
 
 
 
