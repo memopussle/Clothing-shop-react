@@ -8,6 +8,8 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#challenges">Features</a></li>
       </ul>
     </li>
     <li>
@@ -18,7 +20,6 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -40,13 +41,24 @@ This project is an E-commerce Clothing Shop specialising in selling sustainable 
 
 ### Built With
 
-Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe and Framer Motion.
+Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe and Framer Motion. I choose Nextj because this framework can handle both front-end and back-end configurations needed for React. Also, I used the Sanity platform for data storage and content management. Nextjs and Sanity work perfectly together for the back and front end without needing node js, express and MongoDB.
 
 
 [![Technologies used](https://skills.thijs.gg/icons?i=react,nextjs,js&theme=light)](https://skills.thijs.gg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Features
+  <ol>
+        <li><p>User-Friendly Navigation</p></li>
+        <li><p>Buy Now and Add To Cart Function</p></li>
+        <li><p>Online purchase with Stripe</p></li>
+  </ol>
+
+
+### Challenges
+
+There are a few challenges that I faced along the project. Mainly are communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features ( only work on Firefox but not across all internet platforms), and an actual purchase function from Stripe.
 
 
 <!-- GETTING STARTED -->
