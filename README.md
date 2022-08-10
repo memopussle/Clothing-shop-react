@@ -61,6 +61,10 @@ Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaS
 There are a few challenges that I faced along the project. Mainly are communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features ( only work on Firefox but not across all internet platforms), and an actual purchase function from Stripe.
 
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -86,23 +90,12 @@ This is an instructions of how you may set up this roject locally.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
 
 Thu Giang - xanhtham.cuc@gmail.com
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [OverTheSea Ecommerce Shop](https://github.com/memopussle/Clothing-shop-react)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
