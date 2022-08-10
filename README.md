@@ -58,7 +58,7 @@ Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaS
 
 ### Challenges
 
-There are a few challenges that I faced along the project. Mainly are communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features ( only work on Firefox but not across all internet platforms), and an actual purchase function from Stripe.
+There are a few challenges that I faced along the project. Mainly are communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features ( only work on Firefox but not across all internet platforms), and push Stripe purchase function live.
 
 
 
