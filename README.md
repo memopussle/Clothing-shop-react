@@ -40,7 +40,7 @@ This project is an E-commerce Clothing Shop specialising in selling sustainable 
 
 ### Built With
 
-Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe and Framer Motion. I choose Nextj because this framework can handle both front-end and back-end configurations needed for React. Also, I used the Sanity platform for data storage and content management. Nextjs and Sanity work perfectly together for the back and front end without needing node js, express and MongoDB.
+Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe, Context API and Framer Motion. Context API simplifies the props process by store them globally. I choose Nextj because this framework can handle both front-end and back-end configurations needed for React. Also, I used the Sanity platform for data storage and content management. Nextjs and Sanity work perfectly together for the back and front end without needing node js, express and MongoDB.
 
 
 [![Technologies used](https://skills.thijs.gg/icons?i=react,nextjs,js&theme=light)](https://skills.thijs.gg)
