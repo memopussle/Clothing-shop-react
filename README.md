@@ -95,6 +95,8 @@ This is an instructions of how you may set up this roject locally.
 ## Contact
 
 Thu Giang - xanhtham.cuc@gmail.com
+
+<br /> 
 Project Link: [OverTheSea Ecommerce Shop](https://github.com/memopussle/Clothing-shop-react)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
