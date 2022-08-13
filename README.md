@@ -76,9 +76,18 @@ This is an instructions of how you may set up this roject locally.
    ```sh
    git clone https://github.com/memopussle/Clothing-shop-react.git
    ```
-2. Install NPM packages
+2. Install npm packages
    ```sh
    npm install
+   ```
+   
+3. Create an .env file in root directory. Insert your sanity API key, Stripe Public and Secret API keys like below:
+   ```sh
+   NEXT_PUBLIC_SANITY_TOKEN =  YOUR_SANITY_API_KEY
+
+   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = YOUR_PUBLIC_STRIPE_KEY
+
+   NEXT_PUBLIC_STRIPE_SECRET_KEY = YOUR_SECRET_STRIPE_KEY
    ```
 4. Start nextjs
    ```sh
