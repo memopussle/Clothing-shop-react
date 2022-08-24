@@ -40,10 +40,19 @@ OverTheSea is an E-commerce clothing store specialising in selling sustainable w
 
 ### Built With
 
-Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaScript, Stripe, Context API and Framer Motion. Context API simplifies the props by storing them globally. I chose Nextjs because this framework can handle both front-end and back-end configurations, which are needed for React. Also, I used the Sanity.io platform for data storage and content management. Nextjs and Sanity work perfectly together without needing nodejs, express and MongoDB.
+- [NextJS](https://nextjs.org/)
+- [Sanity](https://www.sanity.io/)
+- [ReactJS](https://reactjs.org/)
+- [JavaScript](https://www.javascript.com/)
+- [Stripe](https://stripe.com/en-nz)
 
+I used the technologies to build this application: NextJS, Sanity, Reactjs, JavaScript, Stripe, Context API and Framer Motion. Context API stores states globally so every component can have access to and use them. NextJS framework was used to handle both front-end and back-end development without the need to write NodeJS and use Sanity.io for data storage. For payment, I used Stripe.
 
-[![Technologies used](https://skills.thijs.gg/icons?i=react,nextjs,js&theme=light)](https://skills.thijs.gg)
+### Other Dependencies
+- React icons
+- React hot toast
+- Framer motion
+- Stripe
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +66,18 @@ Technogies that I used to build this application: Nextjs, Sanity, Reactjs, JavaS
 
 ### Challenges
 
-There were a few challenges that I faced while working on this project. Mainly they were communications between Nextjs and Sanity and how to query my products list and integrate it with my website. I hope to implement a few features in the future: A search engine for products, filter and sort features (initially this only works on Firefox but not yet across all internet browsers), and push Stripe purchase payment live.
+My main challenges when building this application are:
+- How to make the cart items update dynamically when users choose the products and quantities.
+- How to fetch cart items to Stripe when users check out. 
+
+#### Solution/ workaround
+- Update the check-out cart: To show items being updated from product page to cart, those components need to share the same states. States can be passed around and be updated in different components. That's why I used context API - a custom hook that makes states globally without manually passing the props down to each component. 
+
+-  Fetch data to Stripe: although Stripe provides instructions on how to use it for online payment in your app, the instruction only returns 1 product with the exact ID provided. But to return the list of chosen products in the cart, I need to think of another way. I used the POST method to pass items in the cart as the request body, and then in the Checkout session function, I mapped through each item and displayed the information stored in the line_items variable.
+
+
+
+I hope to implement a few features in the future: A search engine for products, filter and sort features (initially this only works on Firefox but not yet across all internet browsers), and push Stripe purchase payment live.
 
 
 
